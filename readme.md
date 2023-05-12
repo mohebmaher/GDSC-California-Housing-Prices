@@ -17,7 +17,7 @@ The models were selected based on their initial performance, followed by cross-v
 
 ## Performance
 
-The final model achieved an R-squared metric of about 83%.
+The final model initially achieved an R-squared metric of about 84%.
 
 ## Additional Information
 
