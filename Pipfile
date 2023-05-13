@@ -1,0 +1,32 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+jupyterlab = "*"
+jupyter = "*"
+ipywidgets = "*"
+numpy = "*"
+scipy = "*"
+numba = "*"
+pandas = "*"
+bottleneck = "*"
+numexpr = "*"
+matplotlib = "*"
+ipympl = "*"
+seaborn = "*"
+plotly = "*"
+statsmodels = "*"
+scikit-learn = "*"
+optuna = "*"
+xgboost = "*"
+torch = "*"
+
+[dev-packages]
+faker = "*"
+black = "*"
+dill = "*"
+
+[requires]
+python_version = "3.11"
