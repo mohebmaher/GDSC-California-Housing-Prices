@@ -17,7 +17,7 @@ The models were selected based on their initial performance, followed by cross-v
 
 ## Performance
 
-The final model achieved an R-squared metric of about 85.18% after performing bayesian optimization..
+The final model achieved an R-squared metric of about 85% after performing bayesian optimization.
 
 ## Additional Information
 
