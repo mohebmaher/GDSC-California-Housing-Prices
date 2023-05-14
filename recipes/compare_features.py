@@ -1,7 +1,5 @@
 def compare_features(estimator, X, y, scoring, cv=5, random_state=42, features=None):
-    """
-    Compares different features.
-    """
+    """Compares different features."""
 
     from datetime import datetime
     import matplotlib.pyplot as plt
@@ -53,7 +51,7 @@ def compare_features(estimator, X, y, scoring, cv=5, random_state=42, features=N
     results = pd.DataFrame(results)
     summary = results.describe().transpose()
     summary.sort_values("min", ascending=False, inplace=True)
-    print(summary[["min", "mean", "max"]].round(2))
+    print(summary[["min", "mean", "max"]].applymap(lambda x: f"{x:.2%}"))
     print("\n")
 
     fig, ax = plt.subplots(figsize=(9, 6))
