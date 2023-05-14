@@ -1,7 +1,5 @@
 def compare_models(X, y, scoring, cv=5, random_state=42, estimators={}, **kwargs):
-    """
-    Compares different estimators.
-    """
+    """Compares different estimators."""
 
     from datetime import datetime
     import matplotlib.pyplot as plt
@@ -33,12 +31,12 @@ def compare_models(X, y, scoring, cv=5, random_state=42, estimators={}, **kwargs
         tic_toc = (toc - tic).seconds / 60
         print(f"Validating {name} done in {tic_toc:.2f} minutes!\n")
 
-    summary = pd.DataFrame(results).describe().transpose()
-    print(summary[["min", "mean", "max"]].round(2))
+    results = pd.DataFrame(results)
+    summary = results.describe().transpose()
+    print(summary[["min", "mean", "max"]].applymap(lambda x: f"{x:.2%}"))
     print("\n")
 
-    plt.boxplot(results.values(), labels=results.keys())
-    plt.xticks(rotation=90)
-    plt.show()
+    fig, ax = plt.subplots(figsize=(9, 6))
+    results.plot.box(rot=90, ax=ax);
 
     return summary
