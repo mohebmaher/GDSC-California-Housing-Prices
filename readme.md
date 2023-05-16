@@ -8,8 +8,10 @@ The following Python packages were used in this project:
 - numpy
 - pandas
 - matplotlib
-- seaborn
 - scikit-learn
+- seaborn
+- statsmodels
+- optuna
 
 ## Model Selection
 
