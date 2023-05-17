@@ -5,13 +5,15 @@ This is a machine learning project with Python that aims to build a machine lear
 ## Python Packages
 
 The following Python packages were used in this project:
-- numpy
-- pandas
+
 - matplotlib
+- numpy
+- optuna
+- pandas
+- plotly
 - scikit-learn
 - seaborn
 - statsmodels
-- optuna
 
 ## Model Selection
 
